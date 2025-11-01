@@ -1,0 +1,24 @@
+# Ignore Gradle build outputs and local files
+build/
+.gradle/
+out/
+data/
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.iml
+
+# Node modules (if any)
+node_modules/
+
+# Git
+.git
+
+# ignore local H2 db
+data/
+
