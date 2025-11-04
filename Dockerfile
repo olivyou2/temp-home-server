@@ -35,7 +35,7 @@ WORKDIR /app
 RUN mkdir -p /app/data && chown -R appuser:appuser /app
 
 # Copy the built jar from build stage
-COPY --from=build /app/build/libs/*.jar app.jar
+COPY --from=build /app/build/libs/*-SNAPSHOT.jar app.jar
 
 # Change ownership to appuser
 RUN chown appuser:appuser app.jar
